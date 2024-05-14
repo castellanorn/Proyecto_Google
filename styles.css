@@ -1,0 +1,306 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter;
+    width: auto;
+    color: #353a49;
+}
+header{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: start;
+}
+navbar{
+    padding: 0;
+    display:flex;
+    font-size: 12px;
+    justify-items: center;
+}
+nav{
+    display:flex;
+    margin-left: auto;
+}
+table{
+    padding: 0;
+    display:flex;
+    align-items: center;
+    text-align: justify;
+    vertical-align: center;
+}
+td{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+a{
+    font-family: Inter;
+    text-decoration-line: none;
+    color: #353a49;
+    text-align: center;
+}
+img{
+    margin:10px;
+}
+.division{
+    color: none;
+    filter: drop-shadow(2px 2px 2px #353a49);
+}
+.detail{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+}
+main{
+    display:flex;
+    width: auto;
+}
+aside{
+    margin: 5px;
+    display: flex;
+    align-content: center;
+    width: 66.6%;
+    height: 400px;
+}
+.vistas{
+    padding: 20px;
+    place-content: center;
+}
+.figure{
+    display: flex;
+    place-content: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    width: 100%;
+    }
+.foto{
+    width: 400px;
+    height: 300px;
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+}
+h3{
+    font-size: 12px;
+    font-style: normal;
+}
+.marco{
+    display: grid;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border:#353a49 solid thin;
+}
+section{
+    padding: 5px;
+    margin: 5px;
+    width: 33.3%;
+}
+hr{
+    color: #353a49 solid;
+}
+h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+circle{
+    stroke: #353a49;
+    stroke-width: 1;
+    padding: 2px;
+}
+svg{
+    padding: 5px;
+    height:50px;
+}
+.watches{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.watchSelec{
+    width: 40%;
+    height: 60%;
+    margin: 5px;
+    border: #353a49 solid thin;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    text-justify: center;
+    align-items: flex-start;
+}
+.watch{
+    width: 100px;
+}
+.pedido{
+    padding: 10px;
+    margin: 5px;
+    background-color: #f8f9fa;
+}
+input{
+    width: 60px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border:#353a49 solid thin;
+}
+button {
+    width: 200px;
+    height: 45px;
+    text-decoration-line: none;
+    background: #1a73e8;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Inter;
+    font: 12px bold;
+    border:0;
+}
+.boton{
+    color: #ffffff;
+    font-family: Inter;
+}
+.delivery{
+    display: flex;
+}
+span{
+    color: #1a73e8;
+}
+tr{
+    vertical-align: auto;
+}
+ul li{
+    list-style: none;
+    display: block;
+    float: none;
+}
+.menu{
+    position: relative;
+    padding-left: 40px;
+    display:none;
+    margin: 0;
+}
+.menu:hover{
+    color:#1a73e8;
+}    
+.submenu{
+    position: absolute;
+    display: none;
+    float: right;
+    width: auto;
+}
+.menu:hover > .submenu{
+    display: block;
+    position: relative;
+    float: none;
+}
+.footer{
+    background-color: #f8f9fa;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 8px;
+}
+.politicas{
+    padding-left: 35px;
+    width:50%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+.legal{
+    padding-right: 30px;
+}
+@media only screen and (max-width:1100px) {
+    main{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .vistas, .division{
+        display: none;
+    }
+    aside{
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        place-content: center;
+        height: 400px;
+    }
+    section{
+        width: 100%;
+    }
+    .watches{
+        height: auto;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .watchSelec{
+        width: 30%;
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+    .footer{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:744px) {
+    navbar{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }   
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+    *
+    .politicas{
+        width: 100%;
+        padding:0;
+        display: grid;
+        grid-template-columns: 20% 10% 10% 10% 10% 10% 10% 20%;
+        grid-template-rows: 15% 15% 15% 15% 15% 25%;
+    }
+    .privacy{
+        grid-row-start: 1;
+        grid-column: 4/span 2;
+    }
+    .google{
+        grid-row: 2;
+        grid-column: 2/span 6;
+    }
+    .sales{
+        grid-row: 3;
+        grid-column: 3/ span 4;
+    }
+    .terms{
+        grid-row: 4;
+        grid-column: 3/span 4;
+    }
+    .Spain{
+        grid-row: 5/span 2;
+        grid-column-start: 4;
+        justify-content: right;
+        padding:0;
+    }
+    .bandera{
+        grid-row: 5/span 2;
+        grid-column-start: 5;
+        justify-content: left;
+        margin:0;
+    }
+}
